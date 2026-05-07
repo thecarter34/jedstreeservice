@@ -162,27 +162,33 @@ body {
 /* --- IMMERSIVE HERO SECTION --- */
 .hero-immersive {
   min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--neutral-dark);
-  background-image: url("./images/hero-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  animation: heroBgZoom 20s ease-in-out infinite alternate;
   position: relative;
   overflow: hidden;
   padding: var(--section-padding);
 }
 
-/* Dark overlay for readability - using brand charcoal for visual consistency */
+/* Background image in ::before so overflow:hidden clips the zoom animation */
+.hero-immersive::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("./images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  animation: heroBgZoom 20s ease-in-out infinite alternate;
+  z-index: 0;
+}
+
+/* Dark overlay for readability */
 .hero-immersive::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   background: linear-gradient(
     135deg,
     rgba(44, 44, 44, 0.9) 0%,
@@ -409,6 +415,7 @@ header .container {
   display: flex;
   align-items: center;
   gap: 8px;
+  white-space: nowrap;
 }
 
 /* --- AWARDS SECTION --- */
