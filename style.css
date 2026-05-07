@@ -364,6 +364,7 @@ header .container {
 .navbar-logo img {
   height: 50px;
   width: auto;
+  display: block;
 }
 
 .navbar-nav {
