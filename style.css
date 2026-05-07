@@ -1231,3 +1231,49 @@ footer {
     scroll-snap-align: start;
   }
 }
+
+/* Floating Scroll-to-Top Button */
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: var(--brand);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.scroll-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-top:hover {
+  background: var(--accent);
+  transform: translateY(-2px);
+}
+
+.scroll-top svg {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 480px) {
+  .scroll-top {
+    bottom: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+  }
+}
