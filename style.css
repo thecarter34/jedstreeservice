@@ -172,7 +172,6 @@ body {
   position: relative;
   overflow: hidden;
   padding: var(--section-padding);
-  will-change: transform;
 }
 
 /* Dark overlay for readability - using brand charcoal for visual consistency */
@@ -337,11 +336,11 @@ header {
   backdrop-filter: blur(10px);
   box-shadow: var(--shadow-sm);
   transition: transform 0.3s ease;
-  will-change: transform;
 }
 
 .navbar-hidden {
   transform: translateY(-100%);
+  box-shadow: none;
 }
 
 .navbar-visible {
@@ -479,8 +478,6 @@ header .container {
 .services-bento-grid {
   padding: var(--section-padding);
   background: var(--neutral);
-  content-visibility: auto;
-  contain-intrinsic-size: 0 800px; /* Estimated height */
 }
 
 .services-bento-grid h2 {
@@ -713,8 +710,6 @@ header .container {
 .gallery-section {
   padding: var(--section-padding);
   background: var(--neutral-dark);
-  content-visibility: auto;
-  contain-intrinsic-size: 0 600px; /* Estimated height */
 }
 
 .gallery-container {
@@ -759,7 +754,6 @@ header .container {
   height: 100%;
   object-fit: cover;
   transition: transform 0.4s ease;
-  will-change: transform;
 }
 
 .gallery-item:hover img {
@@ -792,8 +786,6 @@ header .container {
 .social-proof-section {
   padding: var(--section-padding);
   background: var(--neutral);
-  content-visibility: auto;
-  contain-intrinsic-size: 0 700px; /* Estimated height */
 }
 
 .social-proof-section h2 {
