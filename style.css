@@ -68,6 +68,7 @@
 html {
   scroll-behavior: auto; /* Override scroll-to-top */
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
