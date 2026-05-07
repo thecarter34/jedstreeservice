@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+o<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <script>window.scrollTo(0, 0);</script>
 
     <main>
         <!-- Immersive Hero Section -->
@@ -349,14 +348,16 @@
         const heroHeight = heroSection.offsetHeight;
 
         window.addEventListener('scroll', () => {
-            if (window.scrollY > heroHeight - 100) { // Adjust threshold as needed
-                navbar.classList.add('navbar-visible');
-                navbar.classList.remove('navbar-hidden');
-            } else {
-                navbar.classList.remove('navbar-visible');
-                navbar.classList.add('navbar-hidden');
-            }
-        });
+            requestAnimationFrame(() => {
+                if (window.scrollY > heroHeight - 100) { // Adjust threshold as needed
+                    navbar.classList.add('navbar-visible');
+                    navbar.classList.remove('navbar-hidden');
+                } else {
+                    navbar.classList.remove('navbar-visible');
+                    navbar.classList.add('navbar-hidden');
+                }
+            });
+        }, { passive: true });
 
         // Basic form submission (for demo, client would need server-side handler)
         const contactForm = document.querySelector('.contact-form');
