@@ -64,7 +64,7 @@ done
 - [ ] **GitHub repo rename** — repo name `jedstreeservice` no longer matches the brand. Renaming would change `github.com/thecarter34/jedstreeservice` to something like `lannco-tree-service`. Existing redirect behavior should be verified.
 - [ ] **FB handle** — facebook.com/jedstreeservice still; needs to match once Lannco FB page exists.
 - [ ] **Email verification** — confirm lannco@lanncotreeservice.com is the right address; current repo only has the placeholder.
-- [ ] **FB outreach send** — ghostwriter draft ready, Josh hasn't sent yet. Outreach angle: rebrand gap (new wordmark dropped, existing site still says Jed's).
+- [x] **FB outreach send** — DONE 2026-10-14 via Facebook Messenger. Canonical pitch saved to `~/.hermes/cron/output/lannco-jed-pitch-sent.md`. Awaiting Jed's reply (7-10 days).
 - [ ] **Logo PNG (`logo.png`) deleted** — restore with `git checkout HEAD~1 -- logo.png` if archival is desired.
 
 ## Verification recipe
