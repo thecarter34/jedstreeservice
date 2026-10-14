@@ -314,6 +314,43 @@ body::before {
   box-shadow: 0 10px 30px rgba(212, 160, 23, 0.4);
 }
 
+/* --- HERO OFFER BADGE --- */
+.hero-offer-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  padding: 10px 22px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: var(--text-light);
+  background: rgba(212, 160, 23, 0.12);
+  border: 1.5px solid var(--citrus-burst);
+  border-radius: 999px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  animation: heroTextSlide 0.6s ease-out 0.4s both;
+  transition: transform 0.2s ease, background 0.3s ease, border-color 0.3s ease;
+  cursor: default;
+}
+
+.hero-offer-badge:hover {
+  transform: translateY(-1px);
+  background: rgba(212, 160, 23, 0.22);
+  border-color: #e8b22a;
+}
+
+.hero-offer-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  stroke: var(--citrus-burst);
+}
+
+.hero-offer-badge:hover .hero-offer-icon {
+  stroke: #e8b22a;
+}
+
 @keyframes ctaPulse {
   0%,
   100% {
