@@ -18,7 +18,7 @@
   --tan-accent: #b08c68; /* Subtle hover, dividers, badge backgrounds */
 
   /* CTA - now consistent with brand identity (was citrus yellow-green) */
-  --citrus-burst: #2c4e34; /* CTAs, urgent actions, warnings */
+  --citrus-burst: #d4a017; /* CTAs - warm honey amber pops on forest green, premium-trade vibe */
 
   /* Legacy aliases for backward compatibility */
   --brand: var(--forest-deep);
@@ -29,6 +29,7 @@
   --neutral: #f8fafc;
   --neutral-soft: #f0fdf4;
   --neutral-dark: #2c2c2c;
+  --warm-bg: #fdf6ed; /* Warm tan-tinted off-white for reviews + form sections */
   /* Brand charcoal extracted from logo for hero overlay consistency */
   --charcoal: #2c2c2c;
 
@@ -172,7 +173,7 @@ body {
   background-color: var(--neutral-dark);
   position: relative;
   overflow: hidden;
-  padding: var(--section-padding);
+  padding: clamp(15px, 2vw, 30px) 20px;
 }
 
 /* Background image in ::before so overflow:hidden clips the zoom animation */
@@ -252,7 +253,7 @@ body::before {
   width: 350px;
   max-width: 80vw;
   height: auto;
-  margin-bottom: 40px;
+  margin-bottom: 16px;
   animation: logoEntrance 0.6s ease-out;
 }
 
@@ -270,7 +271,7 @@ body::before {
 .hero-headline {
   font-size: clamp(2.5rem, 7vw, 5rem);
   color: var(--text-light);
-  margin-bottom: 25px;
+  margin-bottom: 12px;
   letter-spacing: -0.02em;
   animation: heroTextSlide 0.6s ease-out 0.2s both;
   text-shadow:
@@ -292,7 +293,7 @@ body::before {
 .hero-subheadline {
   font-size: clamp(1.1rem, 2vw, 1.5rem);
   color: rgba(255, 255, 255, 0.85);
-  margin-bottom: 40px;
+  margin-bottom: 16px;
   animation: heroTextSlide 0.6s ease-out 0.4s both;
 }
 
@@ -797,7 +798,7 @@ header .container {
 /* --- GOOGLE-STYLED REVIEWS --- */
 .social-proof-section {
   padding: var(--section-padding);
-  background: var(--neutral);
+  background: var(--warm-bg);
 }
 
 .social-proof-section h2 {
@@ -952,7 +953,7 @@ header .container {
 /* --- CONTACT SECTION --- */
 .contact-section {
   padding: var(--section-padding);
-  background: var(--neutral-soft);
+  background: var(--warm-bg);
 }
 
 .contact-section h2 {
