@@ -5,9 +5,9 @@
 | Field | Value |
 |---|---|
 | **Status** | Active — rebrand complete, live on CF Pages |
-| **Next** | Verify custom-domain (jedstreeservice.com) DNS → CF Pages; update FB handle; outreach follow-up after FB DM |
+| **Next** | Awaiting Jed's reply to FB DM (sent 2026-10-14) → if no response in 7-10 days, phone fallback (715) 530-4922 |
 | **Blocker** | None |
-| **Last touched** | 2026-10-13 |
+| **Last touched** | 2026-10-14 (FB DM sent; canonical pitch saved to `~/.hermes/cron/output/lannco-jed-pitch-sent.md`) |
 | **Repo** | https://github.com/thecarter34/jedstreeservice.git (repo name still says jedstreeservice — brand mismatch) |
 | **Live URL** | https://jedstreeservice.pages.dev |
 | **Stale URL** | https://jedstreeservice.com + https://www.jedstreeservice.com (still old WordPress site) |
