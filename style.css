@@ -1,21 +1,24 @@
 /* ============================================
-   JED'S TREE SERVICE LLC - CUSTOM STYLESHEET
+   LANNCO TREE SERVICE - CUSTOM STYLESHEET
    Logo-First Design System
    ============================================ */
 
 /* --- CSS Variables (Premium Green Palette) --- */
 :root {
-  /* Primary Brand - Rich Forest (hierarchy: deepest → brightest) */
-  --forest-deepest: #1b4332; /* Authority - headers, footer */
-  --forest-deep: #2d6a4f; /* Primary brand - buttons, sections */
-  --forest-rich: #40916c; /* Accent - hover states, interactive */
+  /* Primary Brand - Lannco Forest (hierarchy: deepest → brightest) */
+  --forest-deepest: #1a3322; /* Authority - headers, footer */
+  --forest-deep: #2c4e34; /* Primary brand - buttons, sections */
+  --forest-rich: #4a7c5e; /* Accent - hover states, interactive */
 
   /* Secondary - Sage/Mint (soft, supporting) */
-  --sage-soft: #74c69d; /* Light accent - badges, highlights */
-  --mint-fresh: #95d5b2; /* Lightest - subtle backgrounds */
+  --sage-soft: #88a89b; /* Light accent - badges, highlights */
+  --mint-fresh: #b8ccc1; /* Lightest - subtle backgrounds */
 
-  /* Accent High Energy - CTAs requiring attention */
-  --citrus-burst: #80b918; /* CTAs, urgent actions, warnings */
+  /* Warm tan accent (extracted from logo oak illustration) */
+  --tan-accent: #b08c68; /* Subtle hover, dividers, badge backgrounds */
+
+  /* CTA - now consistent with brand identity (was citrus yellow-green) */
+  --citrus-burst: #2c4e34; /* CTAs, urgent actions, warnings */
 
   /* Legacy aliases for backward compatibility */
   --brand: var(--forest-deep);
@@ -145,7 +148,7 @@ body {
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(45, 106, 79, 0.35);
+  box-shadow: 0 10px 25px rgba(44, 78, 52, 0.35);
 }
 
 .btn-secondary {
@@ -299,7 +302,7 @@ body::before {
   color: var(--text-light);
   font-size: 1.2rem;
   padding: 18px 42px;
-  box-shadow: 0 5px 20px rgba(45, 106, 79, 0.3);
+  box-shadow: 0 5px 20px rgba(44, 78, 52, 0.3);
   transition:
     background 0.3s ease,
     transform 0.2s ease,
@@ -309,18 +312,18 @@ body::before {
 .hero-content .btn-primary:hover {
   background: var(--accent);
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(45, 106, 79, 0.4);
+  box-shadow: 0 10px 30px rgba(44, 78, 52, 0.4);
 }
 
 @keyframes ctaPulse {
   0%,
   100% {
     transform: translateY(0);
-    box-shadow: 0 5px 20px rgba(45, 106, 79, 0.3);
+    box-shadow: 0 5px 20px rgba(44, 78, 52, 0.3);
   }
   50% {
     transform: translateY(-1px);
-    box-shadow: 0 8px 25px rgba(45, 106, 79, 0.5);
+    box-shadow: 0 8px 25px rgba(44, 78, 52, 0.5);
   }
 }
 
@@ -407,7 +410,7 @@ header .container {
   justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
-  border-bottom: 1px solid rgba(45, 106, 79, 0.1);
+  border-bottom: 1px solid rgba(176, 140, 104, 0.25);
 }
 
 .trust-item {
